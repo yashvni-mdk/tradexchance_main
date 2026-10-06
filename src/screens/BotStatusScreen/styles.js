@@ -1,0 +1,185 @@
+import {Platform, StyleSheet} from 'react-native';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from '../../components/Pixel/index';
+import {COLORS, Fonts} from '../../utils/index';
+
+const styles = StyleSheet.create({
+  safeAreaStyle: {
+    flex: 1,
+  },
+  container: {
+    flex: 1,
+    width: '100%',
+    alignSelf: 'center',
+  },
+  headerView: {
+    flex: 0.1,
+    width: '100%',
+  },
+  mainView: {
+    flex: 0.9,
+    width: '100%',
+  },
+  firstView: {
+    width: '92%',
+    height: hp(40),
+    borderRadius: hp(1),
+    alignSelf: 'center',
+    backgroundColor: COLORS.primary,
+    marginVertical: hp(3),
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowRadius: 2.22,
+
+    elevation: 3,
+  },
+  updateProfileText: {
+    fontSize: hp(3.2),
+    fontFamily: Fonts.FONTS.PoppinsSemiBold,
+    color: COLORS.white,
+    textAlign: 'center',
+    height: hp(4.5),
+  },
+  updateProfileText1: {
+    fontSize: hp(2.6),
+    fontFamily: Fonts.FONTS.PoppinsSemiBold,
+    color: COLORS.white,
+    textAlign: 'center',
+  },
+  activeTitleView: {
+    width: '92%',
+    height: hp(6.5),
+    borderTopLeftRadius: hp(1.5),
+    borderTopRightRadius: hp(1.5),
+    alignSelf: 'center',
+    backgroundColor: COLORS.lightGreen,
+    justifyContent: 'center',
+    paddingLeft: wp(4),
+  },
+  activeText: {
+    fontSize: hp(2.8),
+    fontFamily: Fonts.FONTS.PoppinsSemiBold,
+    color: COLORS.white,
+  },
+  activeView: {
+    width: '92%',
+    height: hp(32),
+    alignSelf: 'center',
+    backgroundColor: COLORS.white,
+    marginTop: hp(0.5),
+    borderRadius: wp(3),
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowRadius: 2.22,
+
+    elevation: 3,
+  },
+  titleActiveView: {
+    width: '100%',
+    height: hp(6),
+    alignSelf: 'center',
+    backgroundColor: COLORS.darkGreen,
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  titleText: {
+    fontSize: hp(1.8),
+    fontFamily: Fonts.FONTS.PoppinsSemiBold,
+    color: COLORS.white,
+    marginHorizontal: wp(2),
+    textAlign: 'center',
+  },
+  dataActiveView: {
+    width: '100%',
+    height: hp(6),
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  dataText: {
+    fontSize: hp(1.8),
+    fontFamily: Fonts.FONTS.PoppinsMedium,
+    color: COLORS.black,
+    marginHorizontal: wp(2),
+    textAlign: 'center',
+  },
+  historyTitleView: {
+    width: '92%',
+    height: hp(6.5),
+    borderTopLeftRadius: hp(1.5),
+    borderTopRightRadius: hp(1.5),
+    alignSelf: 'center',
+    backgroundColor: COLORS.lightPrimary1,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: wp(4),
+    marginTop: hp(3),
+  },
+  searchText: {
+    fontSize: hp(1.8),
+    fontFamily: Fonts.FONTS.PoppinsMedium,
+    color: COLORS.textColor,
+    width: '45%',
+    paddingVertical: Platform.OS == 'ios' ? hp(0.8) : hp(0.1),
+    justifyContent: 'center',
+    borderRadius: wp(2),
+    backgroundColor: COLORS.white,
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowRadius: 2.22,
+    elevation: 3,
+    paddingHorizontal: wp(2),
+  },
+  historyView: {
+    width: '92%',
+    height: hp(32),
+    alignSelf: 'center',
+    backgroundColor: COLORS.white,
+    marginTop: hp(0.5),
+    borderRadius: wp(3),
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowRadius: 2.22,
+
+    elevation: 3,
+  },
+  titleHistoryView: {
+    width: '100%',
+    height: hp(6),
+    alignSelf: 'center',
+    backgroundColor: COLORS.primary,
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  dataHistoryView: {
+    width: '100%',
+    height: hp(6),
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  dataHistoryText: {
+    fontSize: hp(1.8),
+    fontFamily: Fonts.FONTS.PoppinsMedium,
+    color: COLORS.black,
+    marginHorizontal: wp(2),
+    textAlign: 'center',
+  },
+});
+
+export default styles;

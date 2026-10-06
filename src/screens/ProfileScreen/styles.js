@@ -1,0 +1,181 @@
+import {StyleSheet} from 'react-native';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from '../../components/Pixel/index';
+import {COLORS, Fonts} from '../../utils/index';
+
+const styles = StyleSheet.create({
+  safeAreaStyle: {
+    flex: 1,
+  },
+  container: {
+    flex: 1,
+    width: '100%',
+    alignSelf: 'center',
+  },
+  headerView: {
+    flex: 0.1,
+    width: '100%',
+  },
+  mainView: {
+    flex: 0.9,
+    width: '100%',
+  },
+  firstView: {
+    width: '90%',
+    height: hp(40),
+    borderRadius: hp(2),
+    alignSelf: 'center',
+    backgroundColor: COLORS.darkBlue,
+    marginVertical: hp(3),
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: COLORS.black,
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.23,
+    shadowRadius: 11.27,
+    elevation: 14,
+  },
+  profileImage: {
+    width: wp(18),
+    height: hp(8),
+    borderRadius: 10,
+  },
+  linkText: {
+    fontSize: hp(1.8),
+    fontFamily: Fonts.FONTS.PoppinsBold,
+    color: COLORS.white,
+    textAlign: 'center',
+    width: '100%',
+  },
+  activeText: {
+    fontSize: hp(2.2),
+    fontFamily: Fonts.FONTS.PoppinsBold,
+    color: COLORS.iconColor,
+    textAlign: 'center',
+  },
+  joinDate: {
+    fontSize: hp(1.8),
+    fontFamily: Fonts.FONTS.PoppinsSemiBold,
+    color: COLORS.white,
+    textAlign: 'center',
+    marginVertical: hp(2),
+  },
+  logoutButton: {
+    width: wp(25),
+    height: hp(5.5),
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: COLORS.lightPrimary,
+    borderRadius: 5,
+  },
+  logoutText: {
+    fontSize: hp(2),
+    fontFamily: Fonts.FONTS.PoppinsSemiBold,
+    color: COLORS.primary,
+  },
+  secondView: {
+    width: '90%',
+    minHeight: hp(10),
+    borderRadius: hp(2),
+    alignSelf: 'center',
+    backgroundColor: COLORS.white,
+    paddingVertical: hp(3),
+    paddingHorizontal: wp(5),
+    marginBottom: hp(3),
+    shadowColor: COLORS.black,
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.23,
+    shadowRadius: 11.27,
+    elevation: 14,
+  },
+  updateProfileText: {
+    fontSize: hp(2.2),
+    fontFamily: Fonts.FONTS.PoppinsMedium,
+    color: COLORS.black,
+  },
+  browserView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+    marginVertical: hp(4),
+  },
+  profileRound: {
+    width: wp(14),
+    height: wp(14),
+    borderRadius: wp(14),
+  },
+  browseButton: {
+    width: wp(25),
+    height: hp(5.5),
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: COLORS.primary,
+    borderRadius: 5,
+  },
+  browseText: {
+    fontSize: hp(2),
+    fontFamily: Fonts.FONTS.PoppinsSemiBold,
+    color: COLORS.white,
+  },
+  browseText1: {
+    fontSize: hp(1.9),
+    fontFamily: Fonts.FONTS.PoppinsMedium,
+    color: COLORS.iconColor,
+    marginVertical: hp(0.5),
+  },
+  emailPlaceHolder: {
+    fontSize: hp(2.1),
+    color: COLORS.iconColor,
+    fontFamily: Fonts.FONTS.PoppinsSemiBold,
+    marginTop: hp(3),
+  },
+  textInputView: {
+    width: '100%',
+    borderWidth: 0.3,
+    borderColor: COLORS.textColor,
+    backgroundColor: COLORS.lightPrimary,
+    borderRadius: 5,
+    height: hp(6),
+    justifyContent: 'center',
+    marginTop: hp(1.5),
+  },
+  textInput: {
+    marginHorizontal: wp(5),
+    fontFamily: Fonts.FONTS.PoppinsMedium,
+    color: COLORS.black,
+    fontSize: hp(2),
+    width: '90%',
+  },
+  EditView: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    width: '100%',
+    marginTop: hp(3),
+  },
+  editButton: {
+    height: hp(5.5),
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: COLORS.greenColor,
+    borderRadius: 8,
+    paddingHorizontal: wp(6),
+    marginLeft: wp(3),
+  },
+  editText: {
+    fontSize: hp(2),
+    fontFamily: Fonts.FONTS.PoppinsSemiBold,
+    color: COLORS.white,
+  },
+});
+
+export default styles;
